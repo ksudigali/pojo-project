@@ -29,7 +29,13 @@ appleCounter(obj3); // => 3
 ***********************************************************************/
 
 function appleCounter(appleObj) {
-  // Your code here
+  let count = 0;
+  for (let key in appleObj) {
+    if (key.indexOf('apple') >= 0 || key.indexOf('Apple') >= 0) {
+      count++;
+    }
+  }
+  return count;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
